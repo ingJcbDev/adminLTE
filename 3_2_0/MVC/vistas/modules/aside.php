@@ -12,9 +12,9 @@
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/dashboard.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Tablero Principal
@@ -22,7 +22,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link active">
+                    <a style="cursor: pointer" class="nav-link active">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Productos
@@ -31,19 +31,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/productos.php', 'content-wrapper')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Inventarios</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/cargaMasivaProductos.php', 'content-wrapper')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Carga Masiva</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link">
+                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/categorias.php', 'content-wrapper')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Categorías</p>
                             </a>
@@ -51,7 +51,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/ventas.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Ventas
@@ -59,7 +59,7 @@
                     </a>
                 </li>             
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/compras.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Compras
@@ -67,7 +67,7 @@
                     </a>
                 </li>              
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/reportes.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Reportes
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/configuracion.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Configuración
