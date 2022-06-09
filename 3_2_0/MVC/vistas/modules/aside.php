@@ -1,7 +1,7 @@
 <!-- Main Sidebar Container -->
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
-    <a href="index3.html" class="brand-link">
+    <a style="cursor: pointer" class="brand-link">
         <img src="vistas/assets/dist/img/AdminLTELogo.png" alt="AdminLTE Logo"
             class="brand-image img-circle elevation-3" style="opacity: .8">
         <span class="brand-text font-weight-light">AdminLTE 3 </span>
@@ -14,7 +14,7 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/dashboard.php', 'content-wrapper')">
+                    <a style="cursor: pointer" class="nav-link active" onclick="CargarContenido('vistas/dashboard.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Tablero Principal
@@ -22,7 +22,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a style="cursor: pointer" class="nav-link active">
+                    <a style="cursor: pointer" class="nav-link">
                         <i class="nav-icon fas fa-tachometer-alt"></i>
                         <p>
                             Productos
@@ -89,3 +89,9 @@
     <!-- /.sidebar -->
 </aside>
 <!-- /.Main Sidebar Container -->
+<script>
+    $(".nav-link").on('click',function(){
+        $(".nav-link").removeClass('active');
+        $(this).addClass('active');
+    })
+</script>
