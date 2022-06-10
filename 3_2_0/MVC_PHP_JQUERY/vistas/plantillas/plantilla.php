@@ -35,15 +35,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
         <?php
             chdir(str_replace("vistas\plantillas", "", dirname(__FILE__))); // Para que lo ponga sobre la raiz
-            
-            // echo"\n".'<pre> raiz:'."\n";
-            // print_r(getcwd());
-            // echo"\n<br></pre>(".date('Y-m-d h:i:s A').")<br>\n";
-            
             include_once "modules/navbar.php";
-            // die();
             include_once "modules/aside.php";
-            
             ?>
 
         <!-- Content Wrapper. Contains page content -->
