@@ -14,7 +14,7 @@
         <nav class="mt-2">
             <ul class="nav nav-pills nav-sidebar flex-column nav-child-indent" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item">
-                    <a style="cursor: pointer" class="nav-link active" onclick="CargarContenido('vistas/dashboard.php', 'content-wrapper')">
+                    <a style="cursor: pointer" class="nav-link active" onclick="CargarContenido('vistas/dashboard/dashboard.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Tablero Principal
@@ -31,19 +31,19 @@
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/productos.php', 'content-wrapper')">
+                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/productos/productos.php', 'content-wrapper')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Inventarios</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/cargaMasivaProductos.php', 'content-wrapper')">
+                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/cargaMasivaProductos/cargaMasivaProductos.php', 'content-wrapper')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Carga Masiva</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/categorias.php', 'content-wrapper')">
+                            <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/categorias/categorias.php', 'content-wrapper')">
                                 <i class="far fa-circle nav-icon"></i>
                                 <p>Categorías</p>
                             </a>
@@ -51,7 +51,7 @@
                     </ul>
                 </li>
                 <li class="nav-item">
-                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/ventas.php', 'content-wrapper')">
+                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/ventas/ventas.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Ventas
@@ -59,7 +59,7 @@
                     </a>
                 </li>             
                 <li class="nav-item">
-                <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/compras.php', 'content-wrapper')">
+                <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/compras/compras.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Compras
@@ -67,7 +67,7 @@
                     </a>
                 </li>              
                 <li class="nav-item">
-                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/reportes.php', 'content-wrapper')">
+                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/reportes/reportes.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Reportes
@@ -75,7 +75,7 @@
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/configuracion.php', 'content-wrapper')">
+                    <a style="cursor: pointer" class="nav-link" onclick="CargarContenido('vistas/configuracion/configuracion.php', 'content-wrapper')">
                         <i class="nav-icon fas fa-th"></i>
                         <p>
                             Configuración
@@ -89,9 +89,3 @@
     <!-- /.sidebar -->
 </aside>
 <!-- /.Main Sidebar Container -->
-<script>
-    $(".nav-link").on('click',function(){
-        $(".nav-link").removeClass('active');
-        $(this).addClass('active');
-    })
-</script>

@@ -27,21 +27,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <script src="vistas/assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
     <!-- AdminLTE App -->
     <script src="vistas/assets/dist/js/adminlte.min.js"></script>
+    <script src="vistas/plantillas/js/plantilla.js"></script>
 </head>
 
 <body class="hold-transition sidebar-mini">
     <div class="wrapper">
 
         <?php
+            chdir(str_replace("vistas\plantillas", "", dirname(__FILE__))); // Para que lo ponga sobre la raiz
+            
+            // echo"\n".'<pre> raiz:'."\n";
+            // print_r(getcwd());
+            // echo"\n<br></pre>(".date('Y-m-d h:i:s A').")<br>\n";
+            
             include_once "modules/navbar.php";
+            // die();
             include_once "modules/aside.php";
-        ?>
+            
+            ?>
 
         <!-- Content Wrapper. Contains page content -->
         <div class="content-wrapper">
 
             <?php
-                include_once "vistas/dashboard.php";
+                include_once "vistas/dashboard/dashboard.php";
             ?>
 
         </div>
@@ -53,12 +62,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
     </div>
     <!-- ./wrapper -->
-
-    <script>
-        function CargarContenido(pagina_php, contenedor){
-            $("."+contenedor).load(pagina_php);
-        }
-    </script>
 
 </body>
 
