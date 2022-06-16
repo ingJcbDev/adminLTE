@@ -19,3 +19,10 @@ ng g c shared/footer --skip-tests
 ```bash
 ng g m shared/shared --flat
 ```
+
+### Crear Componente sin archivos de pruebas
+```bash
+ng g c pages/dashboard --skip-tests
+ng g c pages/usuarios --skip-tests
+ng g c pages/productos --skip-tests
+```
