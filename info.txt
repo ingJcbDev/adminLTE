@@ -1,5 +1,5 @@
 -- MVC
 https://www.youtube.com/watch?v=pDKd1r_G74Y
 
--- Angular
-https://www.youtube.com/watch?v=UFVPuPI6blE
+-- Angular nodejs fullstack
+https://www.youtube.com/watch?v=_movDeOEot8&t=340s
