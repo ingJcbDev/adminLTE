@@ -8,3 +8,9 @@ ng new adminlte
 ```bash
 ng serve
 ```
+### Crear componente sin archivos de pruebas
+```bash
+ng g c shared/header --skip-tests
+ng g c shared/sidebar --skip-tests
+ng g c shared/footer --skip-tests
+```
