@@ -26,3 +26,8 @@ ng g c pages/dashboard --skip-tests
 ng g c pages/usuarios --skip-tests
 ng g c pages/productos --skip-tests
 ```
+
+### Crear Modulo Solo un archivo
+```bash
+ng g m pages/pages --flat
+```
