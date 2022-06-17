@@ -46,3 +46,8 @@ ng g c pages/pages --skip-tests --flat
 ```bash
 ng g m pages/pages-routing --flat
 ```
+
+### Crear Componente sin archivos de pruebas
+```bash
+ng g c nopages-found/nopages-found --skip-tests
+```
