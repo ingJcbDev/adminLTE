@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ProductosComponent } from './productos/productos.component';
+import { PagesComponent } from './pages.component';
 
 
 
@@ -10,7 +11,8 @@ import { ProductosComponent } from './productos/productos.component';
   declarations: [
     DashboardComponent,
     UsuariosComponent,
-    ProductosComponent    
+    ProductosComponent,
+    PagesComponent    
   ],
   exports:[
     DashboardComponent,

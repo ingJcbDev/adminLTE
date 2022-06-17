@@ -36,3 +36,13 @@ ng g m pages/pages --flat
 ```bash
 ng g c shared/breadcrumbs --skip-tests
 ```
+
+### Crear Componente sin archivos de pruebas
+```bash
+ng g c pages/pages --skip-tests --flat
+```
+
+### Crear Modulo Solo un archivo
+```bash
+ng g m pages/pages-routing --flat
+```
