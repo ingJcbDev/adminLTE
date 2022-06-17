@@ -31,3 +31,8 @@ ng g c pages/productos --skip-tests
 ```bash
 ng g m pages/pages --flat
 ```
+
+### Crear Componente sin archivos de pruebas
+```bash
+ng g c shared/breadcrumbs --skip-tests
+```
