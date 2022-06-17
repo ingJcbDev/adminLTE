@@ -12,14 +12,14 @@ import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
   declarations: [
     HeaderComponent,
     SidebarComponent,
+    BreadcrumbsComponent,
     FooterComponent,
-    BreadcrumbsComponent
   ],
   exports:[
     HeaderComponent,
     SidebarComponent,
+    BreadcrumbsComponent,
     FooterComponent,
-    BreadcrumbsComponent    
   ],
   imports: [
     CommonModule,
