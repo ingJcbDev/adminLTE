@@ -1,18 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ProductosComponent } from './pages/productos/productos.component';
-import { UsuariosComponent } from './pages/usuarios/usuarios.component';
+import { PagesRoutingModule } from './pages/pages-routing.module';
 
-//Aqui van las rutas de la app
+//Ruta Padre -> Aqui van las rutas de la app
 const routes: Routes = [
-  { path: '', component: DashboardComponent },
-  { path: 'usuarios', component: UsuariosComponent },
-  { path: 'productos', component: ProductosComponent },
+  {path:'', redirectTo:'/dashboard', pathMatch:'full'}
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes),
+    PagesRoutingModule
+  ],
   exports: [RouterModule],
 })
 export class AppRoutingModule {}

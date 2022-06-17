@@ -4,6 +4,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ProductosComponent } from './productos/productos.component';
 import { PagesComponent } from './pages.component';
+import { SharedModule } from '../shared/shared.module';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -17,10 +19,13 @@ import { PagesComponent } from './pages.component';
   exports:[
     DashboardComponent,
     UsuariosComponent,
-    ProductosComponent    
+    ProductosComponent,
+    PagesComponent    
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SharedModule,
+    RouterModule
   ]
 })
 export class PagesModule { }
